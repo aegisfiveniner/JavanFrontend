@@ -28,8 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                ".",
+                "./src/styles/base"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -103,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2e478426-3c28-4da1-a6df-81463b116686"
   }
 }

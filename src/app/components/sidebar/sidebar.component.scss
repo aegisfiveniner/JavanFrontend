@@ -1,0 +1,59 @@
+@import "variables";
+
+$max-width-sidebar: 300px;
+
+.profile {
+  height: 322px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-cyan;
+
+  .photo {
+    width: 131px;
+    height: 131px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  .name {
+    padding-bottom: 37px;
+    padding-top: 25px;
+    font-size: 15px;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+  }
+
+  .act {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  min-height: 100%;
+  width: $max-width-sidebar;
+  background-color: $base-color;
+  transition: all 0.2s ease-out;
+
+  .navs {
+    padding-top: 25%;
+    padding-left: 28px;
+    padding-right: 28px;
+    .nav {
+      cursor: pointer;
+      font-size: 12px;
+      padding: 8px;
+      height: 31px;
+      margin-bottom: 1rem;
+      background: #EBF6FF;
+      box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+      text-align: center;
+    }
+  }
+}
