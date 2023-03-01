@@ -7,12 +7,14 @@ import { AssetTableComponent } from './component/asset-table/asset-table.compone
 import { SearchFilterModule } from "../../components/search-filter/search-filter.module";
 import { ComponentModule } from "../../components/component.module";
 import { FormsModule } from "@angular/forms";
+import { AddAssetDialogComponent } from './shared/dialog/add-asset-dialog/add-asset-dialog.component';
 
 
 @NgModule({
   declarations: [
     AssetComponent,
-    AssetTableComponent
+    AssetTableComponent,
+    AddAssetDialogComponent,
   ],
   imports: [
     CommonModule,

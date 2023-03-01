@@ -17,14 +17,14 @@
     </div>
     <div class="sort">
       <button class="btn btn-secondary"
-              (click)="sort()"
-      >
+              (click)="sort()">
         Sort
         <span> <img [src]="icon.sort.src" [alt]="icon.sort.alt"></span>
       </button>
     </div>
     <div class="add">
-      <button class="btn btn-success">Add Asset</button>
+      <button class="btn btn-success"
+              (click)="add()">{{ textAdd }}</button>
     </div>
   </div>
 </div>

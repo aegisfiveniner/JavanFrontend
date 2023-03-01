@@ -1,5 +1,11 @@
 export const avatar = './assets/avatar/migdalia.png';
 
+export const image = {
+  gallery: {
+    src: './assets/image/gallery.svg',
+    alt: 'gallery'
+  }
+}
 export const icons = {
   home:{
     src: '/assets/icons/home.svg',
@@ -15,6 +21,10 @@ export const icons = {
   },
   download: {
     src: '/assets/icons/download.svg',
+    alt: 'sort'
+  },
+  close : {
+    src: '/assets/icons/close.svg',
     alt: 'sort'
   }
 }

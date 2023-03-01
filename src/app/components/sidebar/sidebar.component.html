@@ -9,19 +9,19 @@
         <img [src]="icon.home.src" [alt]="icon.home.alt">
       </span>
       <span>
-        <img [src]="icon.logout.src" [alt]="icon.logout.alt">
+        <img [src]="icon.logout.src" [alt]="icon.logout.alt"
+             (click)="logout()"
+        >
       </span>
     </div>
   </div>
   <ul class="navs">
-    <li class="nav">
-      <a href="">Assets</a>
-    </li>
-    <li class="nav">
-      <a href="">Spare parts</a>
-    </li>
-    <li class="nav">
-      <a href="">Configurations</a>
+    <li *ngFor="let nav of navigations"
+        class="nav"
+        [class.active]="nav.path === activeTab"
+        (click)="navigate(nav.path)"
+    >
+      <a>{{ nav.name }}</a>
     </li>
   </ul>
 </div>

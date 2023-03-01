@@ -18,6 +18,8 @@
 
     input {
       width: 100%;
+      border: none;
+      margin-bottom: 8px;
     }
   }
 
@@ -28,5 +30,9 @@
   button {
     padding: 10px 20px;
     text-align: right;
+  }
+
+  .note {
+    font-size: 10px;
   }
 }

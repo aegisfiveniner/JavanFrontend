@@ -35,6 +35,10 @@ $button-types:(
     background-color: darken($color-white, 20%);
   }
 
+  &.btn-flat {
+    border-radius: 0;
+  }
+
 }
 
 // Generate Button
