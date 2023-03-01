@@ -12,6 +12,7 @@ export class InfoAssetsComponent implements OnInit {
 
   public assets: IAsset[];
   public statusConfig = new AssetConfigStatus();
+  public isSort: boolean;
 
   ngOnInit(): void {
     this.getAssets();
@@ -19,5 +20,15 @@ export class InfoAssetsComponent implements OnInit {
 
   private getAssets(): void {
     this.assets = DBAssetReview;
+  }
+
+  public sortData(state: boolean): void {
+    this.isSort = state;
+
+    if (!this.isSort) {
+      this.assets = this.assets.sort((asc: IAsset, desc: IAsset) => asc.id - desc.id);
+    } else {
+      this.assets = this.assets.sort((asc: IAsset, desc: IAsset) => desc.id - asc.id);
+    }
   }
 }

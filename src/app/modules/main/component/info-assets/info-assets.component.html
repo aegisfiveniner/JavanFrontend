@@ -1,7 +1,7 @@
 <app-card-panel [title]="'Inactive Assets'">
   <ng-container content>
     <div class="text-right">
-      <app-sort></app-sort>
+      <app-sort (OnSort)="sortData(!isSort)"></app-sort>
       <table class="table small" aria-label="table asset">
         <thead>
         <th>Asset name </th>

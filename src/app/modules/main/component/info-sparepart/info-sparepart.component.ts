@@ -12,6 +12,7 @@ export class InfoSparepartComponent implements OnInit {
 
   public spareparts: ISparepart[];
   public statusConfig = new SparepartStatusConfig();
+  public isSort: boolean;
 
   ngOnInit(): void {
     this.getSpareparts();
@@ -21,4 +22,13 @@ export class InfoSparepartComponent implements OnInit {
     this.spareparts = DBSparepartReview;
   }
 
+  public sortData(state: boolean): void {
+    this.isSort = state;
+
+    if(!this.isSort) {
+      this.spareparts = this.spareparts.sort((asc: ISparepart , desc: ISparepart) => asc.id - desc.id);
+    } else {
+      this.spareparts = this.spareparts.sort((asc: ISparepart , desc: ISparepart) => desc.id - asc.id);
+    }
+  }
 }

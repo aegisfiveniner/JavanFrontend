@@ -10,6 +10,7 @@ import { DBAssetInactiveReview } from "../../shared/const/db-inactive-review";
 export class InfoMaintenanceComponent implements OnInit {
 
   public assets: IAsset[];
+  public isSort: boolean;
 
   ngOnInit(): void {
     this.getAssets();
@@ -32,5 +33,16 @@ export class InfoMaintenanceComponent implements OnInit {
 
     return bg
   }
+
+  public sortData(state: boolean): void {
+    this.isSort = state;
+
+    if (!this.isSort) {
+      this.assets = this.assets.sort((asc: IAsset, desc: IAsset) => asc.id - desc.id);
+    } else {
+      this.assets = this.assets.sort((asc: IAsset, desc: IAsset) => desc.id - asc.id);
+    }
+  }
+
 
 }
