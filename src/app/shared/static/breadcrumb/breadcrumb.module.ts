@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChipComponent } from './chip/chip.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+
+
 
 @NgModule({
   declarations: [
-    ChipComponent
+    BreadcrumbComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    ChipComponent
+    BreadcrumbComponent
   ]
-
 })
-export class ComponentModule { }
+export class BreadcrumbModule { }

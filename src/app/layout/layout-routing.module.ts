@@ -9,7 +9,13 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: LayoutComponent
+    component: LayoutComponent,
+    children:[
+      {
+        path: 'assets',
+        loadChildren: () => import('../modules/assets/assets.module').then(m => m.AssetsModule)
+      }
+    ]
   }
 ];
 

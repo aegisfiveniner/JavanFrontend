@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout/layout.component';
 import { SidebarModule } from "../components/sidebar/sidebar.module";
+import { BreadcrumbModule } from "../shared/static/breadcrumb/breadcrumb.module";
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SidebarModule } from "../components/sidebar/sidebar.module";
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    SidebarModule
+    SidebarModule,
+    BreadcrumbModule
   ]
 })
 export class LayoutModule { }

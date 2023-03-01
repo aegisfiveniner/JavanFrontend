@@ -1,7 +1,5 @@
 @import "variables";
 
-$max-width-sidebar: 300px;
-
 .profile {
   height: 322px;
   display: flex;
@@ -30,6 +28,10 @@ $max-width-sidebar: 300px;
     gap: 2rem;
     align-items: center;
     justify-content: center;
+
+    img {
+      cursor: pointer;
+    }
   }
 }
 
@@ -45,6 +47,7 @@ $max-width-sidebar: 300px;
     padding-top: 25%;
     padding-left: 28px;
     padding-right: 28px;
+
     .nav {
       cursor: pointer;
       font-size: 12px;
@@ -52,8 +55,16 @@ $max-width-sidebar: 300px;
       height: 31px;
       margin-bottom: 1rem;
       background: #EBF6FF;
-      box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+      box-shadow: $shadow;
       text-align: center;
+      transition: all 0.2s ease-out;
+
+      &.active,
+      &:hover {
+        padding-top: 16px;
+        box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+        transition: all 0.2s linear;
+      }
     }
   }
 }
