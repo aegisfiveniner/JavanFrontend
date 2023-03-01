@@ -8,6 +8,7 @@ import { SearchFilterModule } from "../../components/search-filter/search-filter
 import { ComponentModule } from "../../components/component.module";
 import { FormsModule } from "@angular/forms";
 import { AddAssetDialogComponent } from './shared/dialog/add-asset-dialog/add-asset-dialog.component';
+import { PipeModule } from "../../shared/pipe/pipe.module";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { AddAssetDialogComponent } from './shared/dialog/add-asset-dialog/add-as
     AssetsRoutingModule,
     SearchFilterModule,
     ComponentModule,
-    FormsModule
+    FormsModule,
+    PipeModule
   ]
 })
 export class AssetsModule { }

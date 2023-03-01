@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SearchFilterComponent } from './search-filter/search-filter.component';
 import { FormsModule } from "@angular/forms";
+import { ComponentModule } from "../component.module";
 
 
 
@@ -11,10 +12,11 @@ import { FormsModule } from "@angular/forms";
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ComponentModule
   ],
   exports: [
-    SearchFilterComponent
+    SearchFilterComponent,
   ]
 })
 export class SearchFilterModule { }

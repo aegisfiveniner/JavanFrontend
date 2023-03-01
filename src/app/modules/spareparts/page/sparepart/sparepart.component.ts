@@ -27,7 +27,7 @@ export class SparepartComponent implements OnInit {
     if(!keyword) {
       this.getSparepeart();
     } else {
-      this.spareparts = this.spareparts.filter(data => data.sparepartName.toLowerCase().includes(keyword));
+      this.spareparts = this.spareparts.filter(data => data.sparepartName.toLowerCase().includes(keyword.toLowerCase()));
     }
   }
 

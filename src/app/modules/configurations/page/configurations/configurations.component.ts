@@ -12,7 +12,7 @@ export class ConfigurationsComponent implements OnInit {
 
   public configurations: IConfiguration[];
   public isSort: boolean;
-  
+
 
   ngOnInit(): void {
     this.getConfigurations();
@@ -26,7 +26,7 @@ export class ConfigurationsComponent implements OnInit {
     if(!keyword) {
       this.getConfigurations();
     } else {
-      this.configurations = this.configurations.filter(data => data.configName.toLowerCase().includes(keyword));
+      this.configurations = this.configurations.filter(data => data.configName.toLowerCase().includes(keyword.toLowerCase()));
     }
   }
 

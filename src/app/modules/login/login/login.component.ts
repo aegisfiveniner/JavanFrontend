@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IUser } from "../shared/model/user.model";
-import { DBUser } from "../data/db-user";
+import { DBUser } from "../shared/data/db-user";
 import { Router } from "@angular/router";
 
 @Component({
@@ -22,9 +22,9 @@ export class LoginComponent {
       console.log(this.username, this.password)
       if(this.username === this.user.fullname && this.password === this.user.password) {
         localStorage.setItem('user', JSON.stringify(this.user));
-        this.router.navigate(['./assets'])
+        this.router.navigate(['./home'])
       }
-    }, 1000)
+    }, 500)
   }
 
 }

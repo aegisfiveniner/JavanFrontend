@@ -34,7 +34,7 @@ export class AssetComponent implements OnInit, OnDestroy {
     if(!keyword) {
       this.getAssets();
     } else {
-      this.dataTable = this.dataTable.filter(data => data.assetName.toLowerCase().includes(keyword));
+      this.dataTable = this.dataTable.filter(data => data.assetName.toLowerCase().includes(keyword.toLowerCase()));
     }
   }
 

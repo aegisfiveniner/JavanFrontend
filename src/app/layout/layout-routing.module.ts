@@ -15,7 +15,7 @@ const routes: Routes = [
     children:[
       {
         path: '',
-        redirectTo: 'assets',
+        redirectTo: 'home',
         pathMatch: 'full'
       },
       {
@@ -38,6 +38,10 @@ const routes: Routes = [
         data: {
           activeTab: 'configurations'
         }
+      },
+      {
+        path: 'home',
+        loadChildren: () => import('../modules/main/main.module').then(m => m.MainModule),
       }
     ]
   },

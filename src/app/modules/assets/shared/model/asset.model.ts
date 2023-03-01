@@ -7,4 +7,5 @@ export interface IAsset {
   modelNumber: string;
   manufacturer: string;
   currentStatus: string;
+  downtime?: number;
 }

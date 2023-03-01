@@ -29,4 +29,8 @@ export class SidebarComponent {
     this.router.navigate(['./auth']);
   }
 
+  public home(): void {
+    this.router.navigate(['./home'])
+  }
+
 }
