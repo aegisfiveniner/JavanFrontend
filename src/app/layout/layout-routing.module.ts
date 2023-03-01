@@ -24,6 +24,20 @@ const routes: Routes = [
         data: {
           activeTab: 'assets'
         }
+      },
+      {
+        path: 'spareparts',
+        loadChildren: () => import('../modules/spareparts/spareparts.module').then(m => m.SparepartsModule),
+        data: {
+          activeTab: 'spareparts'
+        }
+      },
+      {
+        path: 'configurations',
+        loadChildren: () => import('../modules/configurations/configurations.module').then(m => m.ConfigurationsModule),
+        data: {
+          activeTab: 'configurations'
+        }
       }
     ]
   },

@@ -1,4 +1,4 @@
-import { IAsset } from "../shared/model/asset.model";
+import { IAsset } from "../model/asset.model";
 
 export const DBAsset: IAsset[] = [
   {

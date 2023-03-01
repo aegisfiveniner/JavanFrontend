@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { generateAssetStatus } from '../../shared/const/asset-table.config';
+import { generateAssetStatus } from '../../shared/const/asset.config';
 import { IAsset } from "../../shared/model/asset.model";
 
 @Component({
