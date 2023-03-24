@@ -25,26 +25,15 @@
       "location": "Yogyakarta"
     },
     {
-      "id": "2123",
-      "name": "zasset",
-      "type": "sdf",
-      "serialNumber": "sdf",
-      "location_id": "3",
-      "modelNumber": "fsdfds",
-      "manufacturer": "fds",
-      "status": "maintenance",
-      "url_photo": null
-    },
-    {
-      "id": "99",
-      "name": "computer maxa",
-      "type": "max2",
-      "serialNumber": "hsadiu7",
-      "location_id": "2",
-      "modelNumber": "uashd8",
-      "manufacturer": "sdai",
-      "status": "stopped",
-      "url_photo": null
+      "id": "56",
+      "name": "asset 56",
+      "type": "a",
+      "serialNumber": "gh",
+      "location_id": "1",
+      "modelNumber": "hg",
+      "manufacturer": "ana",
+      "status": "active",
+      "url_photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXDtoAa4sOyGGF9H6hqf7lGJyV_ZKVbEJi0sl3wMPVPw&s"
     }
   ],
   "spareparts": [
@@ -60,17 +49,6 @@
       "url_photo": "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
     },
     {
-      "id": 18,
-      "name": "sparepart 51",
-      "type": "type 21",
-      "modelNumber": "sp01",
-      "manufacturer": "ametcha",
-      "quantity": 2,
-      "location_id": "2",
-      "status": "empty",
-      "url_photo": null
-    },
-    {
       "id": "423",
       "name": "sparepat2",
       "type": "i",
@@ -79,7 +57,7 @@
       "quantity": "12",
       "location_id": "2",
       "status": "empty",
-      "url_photo": "http://2.bp.blogspot.com/-46_7hRWjOy8/VMJBqK69vLI/AAAAAAAABKw/vcuk-6weYd8/s1600/002-apa-perbedaan-bedanya-komputer-pc-mac.jpg"
+      "url_photo": "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
     }
   ],
   "configurations": [

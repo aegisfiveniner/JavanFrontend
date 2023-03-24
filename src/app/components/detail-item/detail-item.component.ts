@@ -33,9 +33,9 @@ export class DetailItemComponent implements OnInit {
       const value = control.value ? control.value : '';
       formGroupFields[control.inputName] = new FormControl(value);
     });
-    formGroupFields['url_photo'] = new FormControl(
-      this.dialogData.displayedItemDetail.url_photo
-    );
+    // formGroupFields['url_photo'] = new FormControl(
+    //   this.dialogData.displayedItemDetail.url_photo
+    // );
     return formGroupFields;
   }
 

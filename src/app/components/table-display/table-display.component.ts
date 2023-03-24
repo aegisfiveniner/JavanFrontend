@@ -195,6 +195,7 @@ export class TableDisplayComponent implements OnInit, AfterViewInit {
             inputName: 'manufacturer',
           },
           { key: 'Current status', value: item?.status, inputName: 'status' },
+          { key: 'Url Photo', value: item?.url_photo, inputName: 'url_photo' },
         ],
         url_photo: item?.url_photo,
       };
@@ -225,6 +226,7 @@ export class TableDisplayComponent implements OnInit, AfterViewInit {
           },
           { key: 'Quantity', value: item?.quantity, inputName: 'quantity' },
           { key: 'Current status', value: item?.status, inputName: 'status' },
+          { key: 'Url Photo', value: item?.url_photo, inputName: 'url_photo' },
         ],
         url_photo: item?.url_photo,
       };
