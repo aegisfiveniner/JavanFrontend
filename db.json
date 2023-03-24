@@ -34,6 +34,17 @@
       "manufacturer": "ana",
       "status": "active",
       "url_photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXDtoAa4sOyGGF9H6hqf7lGJyV_ZKVbEJi0sl3wMPVPw&s"
+    },
+    {
+      "id": "88",
+      "name": "edited asset 88",
+      "type": "type 8",
+      "serialNumber": "ahsdg6",
+      "location_id": "1",
+      "modelNumber": "hgshdg",
+      "manufacturer": "anna",
+      "status": "active",
+      "url_photo": "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
     }
   ],
   "spareparts": [
@@ -50,14 +61,14 @@
     },
     {
       "id": "423",
-      "name": "sparepat2",
+      "name": "sparepat edit 33",
       "type": "i",
       "modelNumber": "sad",
       "manufacturer": "12",
-      "quantity": "12",
+      "quantity": "50",
       "location_id": "2",
       "status": "empty",
-      "url_photo": "https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
+      "url_photo": "https://techservices.illinois.edu/wp-content/uploads/2021/08/computer-lab-icon-2-1024x1024.jpg"
     }
   ],
   "configurations": [
